@@ -146,6 +146,14 @@ def analyze_text(comment):
     return text
 
 
+
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(
+    repo_id="captainprice27/XSento",
+    filename="twitter_sentiment.keras"
+)
+
 # It can be used to reconstruct the model identically.
 model = keras.models.load_model("twitter_sentiment.keras",
                                 custom_objects={'Attention': Attention})
