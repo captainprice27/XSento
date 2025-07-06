@@ -1,8 +1,8 @@
 tensorflow==2.15.0
 keras==2.15.0
-gradio==4.27.0
+gradio==3.50.2
 nltk==3.8.1
 spacy==3.7.2
 contractions==0.1.73
 numpy==1.24.3
-huggingface-hub
+huggingface_hub==0.20.3
